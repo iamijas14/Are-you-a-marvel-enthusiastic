@@ -139,5 +139,30 @@ for(var i=0;i<avengersGame.length;i++)
 //_______________________________//
 
 
-console.log(chalk.greenBright.bold("HOORAY!! YOU SCORED " +score ,"out of 20"));
+console.log(chalk.greenBright.bold("HOORAY!! YOU SCORED " +score ,"out of 20 WELL SEND ME A SCREENSHOT TO UPDATE YOUR HIGHSCORE."));
+//_______________________________//
+
+console.log(chalk.magentaBright.bold.underline("CHECK OUT THE HIGH SCORES"));
+
+var highScores=[
+ {
+    name:"Ijas",
+    score:20,
+ },
+ {
+    name:"Sadiq",
+    score:18,
+ }
+ ];
+
+for(var i=0;i<highScores.length;i++)
+{
+  var highscore=highScores[i];
+  console.log("Name: " , highscore.name);
+  console.log("Score: " , highscore.score);
+  console.log("----------")
+
+}
+
+
 console.log(chalk.bold.cyanBright("\nTHANKYOU "+playerName+" FOR PARTICIPATING IN THE QUIZ ᛤ"));
